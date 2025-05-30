@@ -6,8 +6,8 @@
     <title>몽쉘 패딩 하네스 올인원 6size 3colors | 오늘의집</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/product.css">
-    <script src="./scripts/product.js" defer></script>
     <script src="./scripts/thumnails.js" defer></script>
+    <script src="./scripts/product.js" defer></script>
 </head>
 <body>
     <main>
@@ -69,30 +69,32 @@
                         <option value="">색상</option>
                         <option value="black">블랙</option>
                         <option value="raspberry">라즈베리</option>
+                        <option value="">그레이(39,900원)(품절)</option>
                     </select>
                     </div>
                     <!-- JS에서 select클릭 시 출력되는 영역 시작 -->
-                    <div class="order_select">
-                        <p class="list">
-                            색상:<em class="color">블랙</em>
-                            사이즈:<em class="size">S</em>
-                        </p>
-                        <a href="#" class="close">X</a>
-                        <div class="order_num">
-                            <button type="button" id="minus">-</button>
-                            <input type="number" value="1" name="user_num">
-                            <button type="button" id="plus">+</button>
-                        </div>
-                        <p class="price"><em>39,900</em>원</p>
-                    </div>
+                    
                     <select name="size">
                         <option value="">사이즈</option>
-                        <option value="">S(39,900원)</option>
-                        <option value="">SM(39,900원)</option>
-                        <option value="">M(39,900원)</option>
+                        <option value="s">S(39,900원)</option>
+                        <option value="sm">SM(39,900원)</option>
+                        <option value="m">M(39,900원)</option>
                     </select>
                 </div>
                 <!-- JS에서 select클릭 시 출력되는 영역 끝 -->
+                <div class="order_select">
+                    <p class="list">
+                        색상:<em class="color">블랙</em>
+                        사이즈:<em class="size">S</em>
+                    </p>
+                    <a href="#" class="close">X</a>
+                    <div class="order_num">
+                        <button type="button" id="minus">-</button>
+                        <input type="number" value="1" name="user_num">
+                        <button type="button" id="plus">+</button>
+                    </div>
+                    <p class="price"><em>39,900</em>원</p>
+                </div>
                 <div class="total">
                     <p>주문금액</p>
                     <p class="price"><em>0</em>원</p>
