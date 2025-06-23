@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>swiper-direction1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        * {margin:0; padding:0; line-height:1.0; box-sizing:border-box;}
+        .swiper {width:1000px; height:40px; background:#ddd;}
+        .swiper .swiper-wrapper {}
+        .swiper .swiper-wrapper .swiper-slide {background:#ff0;}
+        .swiper .swiper-wrapper .swiper-slide .slide1 {}
+        .swiper .swiper-wrapper .swiper-slide .slide2 {}
+        .swiper .swiper-wrapper .swiper-slide .slide3 {}
+        .swiper .swiper-wrapper .swiper-slide .slide4 {}
+    </style>
+</head>
+<body>
+    <div class="swiper news" id="news">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><a href="#">외신, '트럼프, 韓·日 정상 특별회담'…대통령실 "확인 중"</a></div>
+            <div class="swiper-slide slide2"><a href="#">정청래 “김용태, ‘李 대통령 임기 뒤 재판 약속?’ 무례하기 짝이 없어…내란 우두머리나 빨리 감빵에 집어넣자고 하라”
+            </a></div>
+            <div class="swiper-slide slide3"><a href="#">[속보]李는 ‘불참’ 결정했는데…트럼프, 한국·일본·호주와 특별회의 개최 조정-닛케이
+            </a></div>
+            <div class="swiper-slide slide4"><a href="#">“15만 원 받고 배제라니”.. 또 다시 불붙은 ‘상위 10%’ 낙인 논란
+            </a></div>
+        </div>
+    </div>
+    <script>
+        const newSwiper = new Swiper('#news',{
+            effect:'fade', 
+            autoplay:{delay:2000},
+            loop:true,
+            direction:'vertical'
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
